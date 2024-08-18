@@ -1,5 +1,6 @@
-body{
+*{
     font-family: "Roboto", sans-serif;
+    text-decoration: none;
 }
 
 .product-image img {
@@ -153,6 +154,35 @@ body{
     }
 }
 
+/* SECTION 1 */
+.section-1 {
+    position: relative;
+    overflow: hidden;
+}
+
+.section-1 img {
+    width: 100%;
+    height: auto;
+}
+
+.section-1 .container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80%;
+}
+
+.swiper-slide{
+    background: none;
+}
+
+.swiper-slide img {
+    width: 100%;
+    height: auto;
+    border-radius: 15px;
+}
+
 /* Category Start */
 .category-card{
     border: 1px solid #ddd;
@@ -177,4 +207,52 @@ body{
     font-weight: 600;
     color: #000;
     text-align: center;
+}
+
+/* FLASH SALE */
+
+.flash-sale {
+    background-color: #f8f9fa;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.flash-sale .card {
+    border: none;
+    transition: transform 0.3s ease;
+}
+
+.flash-sale .card:hover {
+    transform: scale(1.05);
+}
+
+.flash-sale .card-title {
+    font-size: 1rem;
+}
+
+.flash-sale .price {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.flash-sale .original-price {
+    text-decoration: line-through;
+    color: #999;
+}
+
+.flash-sale .discount {
+    color: red;
+    font-weight: bold;
+}
+
+.flash-sale .progress {
+    height: 8px;
+    border-radius: 5px;
+}
+
+.lihat{
+    margin-left: 10px;
+    text-decoration: none;
+    font-weight: 600;
+    color: #FE7E00;
 }
