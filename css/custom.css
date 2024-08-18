@@ -1,0 +1,47 @@
+.product-image img {
+    width: 100%;
+    height: auto;
+}
+
+.product-thumbnails img {
+    width: 22%;
+    height: auto;
+    cursor: pointer;
+}
+
+.product-price {
+    font-size: 1.5rem;
+    color: #333;
+}
+
+.price-discounted {
+    color: #e74c3c;
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+.color-options .btn {
+    margin-right: 10px;
+}
+
+.color-options .btn.active {
+    background-color: #e74c3c;
+    color: white;
+    border-color: #e74c3c;
+}
+
+.order-summary {
+    background-color: #f9f9f9;
+}
+
+.order-item {
+    font-size: 1rem;
+}
+
+.order-price h4 {
+    color: #e74c3c;
+}
+
+.order-price span {
+    font-size: 0.9rem;
+}
