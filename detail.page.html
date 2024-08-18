@@ -4,10 +4,16 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Document</title>
+  <title>Detail Page</title>
 
   <!-- BOOTSTRAP CSS -->
   <link rel="stylesheet" href="css/bootstrap.min.css" />
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+    rel="stylesheet">
 
   <!-- CSS -->
   <link rel="stylesheet" href="css/custom.css" />
@@ -19,94 +25,158 @@
       <!-- Kolom Gambar Produk -->
       <div class="col-lg-4 col-md-12">
         <div class="product-image">
-          <img src="https://via.placeholder.com/400" alt="Product" class="img-fluid" style="width: 346px" />
-          <div class="product-thumbnails d-flex gap-2 mt-3">
-            <div class="swiper mySwiper">
-              <div class="swiper-wrapper">
-                <img src="https://via.placeholder.com/100" alt="Thumbnail" class="img-thumbnail swiper-slide"
-                  style="width: 63px" />
-                <div class="swiper-slide">Slide 2</div>
-                <div class="swiper-slide">Slide 3</div>
-                <div class="swiper-slide">Slide 4</div>
-                <div class="swiper-slide">Slide 5</div>
-                <div class="swiper-slide">Slide 6</div>
-                <div class="swiper-slide">Slide 7</div>
-                <div class="swiper-slide">Slide 8</div>
-                <div class="swiper-slide">Slide 9</div>
-              </div>
-              <div class="swiper-button-next"></div>
-              <div class="swiper-button-prev"></div>
-              <div class="swiper-pagination"></div>
-            </div>
+          <img id="mainProductImage" src="assets/image/minuman.jpg" alt="Product" class="img-fluid"
+            style="width: 346px;">
+          <div class="product-thumbnails d-flex justify-content-between mt-3">
+            <img src="assets/image/minuman.jpg" alt="Thumbnail 1" class="img-thumbnail"
+              data-large="assets/image/minuman.jpg">
+            <img src="assets/image/minuman(1).jpg" alt="Thumbnail 2" class="img-thumbnail"
+              data-large="assets/image/minuman(1).jpg">
+            <img src="assets/image/minuman(2).jpg" alt="Thumbnail 3" class="img-thumbnail"
+              data-large="assets/image/minuman(2).jpg">
+            <img src="assets/image/minuman(3).jpg" alt="Thumbnail 4" class="img-thumbnail"
+              data-large="assets/image/minuman(3).jpg">
+            <img src="assets/image/minuman(4).jpg" alt="Thumbnail 5" class="img-thumbnail"
+              data-large="assets/image/minuman(4).jpg">
           </div>
         </div>
       </div>
       <!-- Kolom Detail Produk -->
       <div class="col-lg-5 col-md-12">
-        <h3>Humblezing Totebag Marvel Special Edition - FOREST</h3>
-        <div class="product-price">
-          <span class="price-discounted">Rp412.250</span>
-          <span class="price-original text-muted text-decoration-line-through">Rp425.000</span>
+        <h3>BUBUK MINUMAN RASA 500GR / SERBUK MINUMAN ANEKA RASA</h3>
+        <div class="d-flex bawah-nama">
+          <p>Terjual <span>250+</span></p>
+          <p>. </p>
+          <p>
+            <img src="assets/image/Star 1.png" alt="" style="width: 13px; vertical-align: middle;">
+            5 <span>(165 rating)</span>
+          </p>
+          <p>. </p>
+          <p>Diskusi <span>(7)</span></p>
         </div>
-        <p class="mt-5">Pilih warna: <strong>FOREST</strong></p>
+        <div class="product-price mt-2 mb-3">
+          <span class="price-discounted" id="priceDiscounted">Rp20.000</span>
+          <div class="d-flex my-auto gap-2">
+            <div class="persen" id="discountPercentage">
+              3%
+            </div>
+            <span class="price-original text-muted text-decoration-line-through h4" id="priceOriginal">Rp30.000</span>
+          </div>
+        </div>
+        <hr>
+        <p><strong>Pilih Rasa: </strong><span id="selectedColorText">Bubble Gum</span></p>
         <div class="color-options">
-          <button class="btn btn-outline-secondary active">FOREST</button>
-          <button class="btn btn-outline-secondary">COASTAL</button>
+          <button class="btn btn-outline-secondary active btn-sm">Bubble Gum </button>
+          <button class="btn btn-outline-secondary btn-sm">Matcha</button>
+          <button class="btn btn-outline-secondary btn-sm">Milk Tea</button>
+          <button class="btn btn-outline-secondary btn-sm">Coffee</button>
         </div>
+        <hr>
         <div class="product-details mt-4">
           <h6>Detail</h6>
           <p>Kondisi: Baru</p>
           <p>Min. Pemesanan: 1 Buah</p>
           <p>Etalase: Bags</p>
-          <h6>Material and Specs</h6>
-          <p>
-            Three layer water repellent fabric<br />Waterproof ripstop for
-            lining<br />Microfiber sand leather<br />YKK Buckle and Zipper
+          <h6>Spesifikasi Produk :
+          </h6>
+          <p>- Berat bubuk 500gr
+            <br>- Bubuk mix dengan gula
+            <br>- 500gr bisa untuk 13-15 cup
+            <br>- Harga yang tertera untuk 1 rasa
           </p>
         </div>
       </div>
       <!-- Kolom Jumlah dan Catatan -->
       <div class="col-lg-3 col-md-12">
         <div class="order-summary p-3 border">
-          <h5>Atur jumlah dan catatan</h5>
+          <h5 class="font-semibold mb-3">Atur jumlah dan catatan</h5>
           <div class="order-item d-flex justify-content-between align-items-center mb-3">
-            <span>FOREST</span>
+            <span id="orderItemColor">Bubble Gum</span>
             <span>Stok: 32</span>
           </div>
           <div class="input-group mb-3">
-            <button class="btn btn-outline-secondary" type="button">-</button>
-            <input type="text" class="form-control text-center" value="1" />
-            <button class="btn btn-outline-secondary" type="button">+</button>
+            <button class="btn btn-outline-secondary" type="button" onclick="updateValue(-1)">-</button>
+            <input type="text" class="form-control text-center" value="1" id="numberInput">
+            <button class="btn btn-outline-secondary" type="button" onclick="updateValue(1)">+</button>
           </div>
           <div class="order-price mb-3">
             <span class="text-muted text-decoration-line-through">Rp425.000</span>
             <h4>Rp412.250</h4>
           </div>
-          <button class="btn btn-success w-100 mb-2">+ Keranjang</button>
-          <button class="btn btn-primary w-100">Beli</button>
+          <button class="btn btn-keranjang w-100 mb-2">+ Keranjang</button>
+          <button class="btn btn-beli w-100">Beli</button>
         </div>
       </div>
     </div>
   </div>
-  <!-- Swiper JS -->
-  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
-  <!-- Initialize Swiper -->
   <script>
-    var swiper = new Swiper(".mySwiper", {
-      slidesPerView: 5,
-      spaceBetween: 30,
-      pagination: {
-        el: ".swiper-pagination",
-        type: fraction,
-      },
-      navigation: {
-        nextEl: ".swiper-button-next",
-        prevEl: ".swiper-button-prev",
-      },
+    document.addEventListener('DOMContentLoaded', function () {
+      const mainImage = document.getElementById('mainProductImage');
+      const thumbnails = document.querySelectorAll('.product-thumbnails img');
+
+      thumbnails.forEach(thumbnail => {
+        thumbnail.addEventListener('mouseover', function () {
+          const largeImage = this.getAttribute('data-large');
+          mainImage.src = largeImage;
+
+          // Remove border from all thumbnails
+          thumbnails.forEach(img => img.style.borderColor = 'transparent');
+
+          // Add border to the hovered thumbnail
+          this.style.borderColor = '#e74c3c';
+        });
+      });
+    });
+
+    // Mengatur perubahan warna yang dipilih
+    document.querySelectorAll('.color-options .btn').forEach(function (button) {
+      button.addEventListener('click', function () {
+        // Menghilangkan kelas 'active' dari semua tombol
+        document.querySelectorAll('.color-options .btn').forEach(function (btn) {
+          btn.classList.remove('active');
+        });
+
+        // Menambahkan kelas 'active' ke tombol yang diklik
+        this.classList.add('active');
+
+        // Mengubah teks warna yang dipilih
+        const selectedColor = this.textContent;
+        document.getElementById('selectedColorText').textContent = selectedColor;
+        document.getElementById('orderItemColor').textContent = selectedColor;
+      });
+    });
+
+    function updateValue(change) {
+      const input = document.getElementById('numberInput');
+      let value = parseInt(input.value, 10);
+      if (change < 1 && value <= 1) return; // Prevent decrement below 0
+      input.value = value + change;
+    }
+
+    function calculateDiscountPercentage(original, discounted) {
+      return ((original - discounted) / original * 100).toFixed(0);
+    }
+
+    document.addEventListener('DOMContentLoaded', () => {
+      const priceOriginalElement = document.getElementById('priceOriginal');
+      const priceDiscountedElement = document.getElementById('priceDiscounted');
+      const discountPercentageElement = document.getElementById('discountPercentage');
+
+      // Extract numerical values from the price strings
+      const priceOriginal = parseFloat(priceOriginalElement.innerText.replace(/[^\d]/g, ''));
+      const priceDiscounted = parseFloat(priceDiscountedElement.innerText.replace(/[^\d]/g, ''));
+
+      // Calculate discount percentage
+      const discountPercentage = calculateDiscountPercentage(priceOriginal, priceDiscounted);
+
+      // Update the percentage text
+      discountPercentageElement.innerText = `${discountPercentage}%`;
     });
   </script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+
 </body>
 
 </html>

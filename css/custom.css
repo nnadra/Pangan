@@ -1,3 +1,7 @@
+body{
+    font-family: "Roboto", sans-serif;
+}
+
 .product-image img {
     width: 100%;
     height: auto;
@@ -9,15 +13,50 @@
     cursor: pointer;
 }
 
+.thumbnail {
+    border: 2px solid transparent;
+    cursor: pointer;
+}
+
+.product-thumbnails img {
+    width: 63px;
+    cursor: pointer;
+    border: 2px solid transparent;
+    transition: border 0.3s;
+}
+
+.product-thumbnails img:hover {
+    border-color: #e74c3c;
+}
+
+.bawah-nama p{
+    font-size: 15px;
+}
+
+.bawah-nama span{
+    color: #6C7588;
+}
+
 .product-price {
     font-size: 1.5rem;
     color: #333;
 }
 
 .price-discounted {
-    color: #e74c3c;
+    color: #FE7E00;
     font-weight: bold;
+    font-size: 38px;
     margin-right: 10px;
+}
+
+.persen{
+    background: #FFDBE2;
+    color: firebrick;
+    font-size: 18px;
+    padding: 2px 5px;
+    border-radius: 5px;
+    text-align: center;
+    align-self: baseline;
 }
 
 .color-options .btn {
@@ -25,9 +64,9 @@
 }
 
 .color-options .btn.active {
-    background-color: #e74c3c;
+    background-color: #FE7E00;
     color: white;
-    border-color: #e74c3c;
+    border-color: #FE7E00;
 }
 
 .order-summary {
@@ -44,6 +83,26 @@
 
 .order-price span {
     font-size: 0.9rem;
+}
+
+.btn-keranjang{
+    color: white;
+    background-color: #FE7E00;
+}
+
+.btn-keranjang:hover{
+    background-color: #D56A00;
+    color: white;
+}
+
+.btn-beli{
+    color: #FE7E00;
+    border: 1.5px solid #FE7E00;
+    background: transparent;
+}
+.btn-beli:hover{
+    color: #FE7E00;
+    border: 1.5px solid #FE7E00;
 }
 /* Navbar */
 .main-navbar{
