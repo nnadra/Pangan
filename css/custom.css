@@ -3,6 +3,10 @@
     text-decoration: none;
 }
 
+a{
+    text-decoration: none;
+}
+
 .product-image img {
     width: 100%;
     height: auto;
@@ -183,6 +187,11 @@
     border-radius: 15px;
 }
 
+.swiper-button-next,
+  .swiper-button-prev {
+    color: #FE7E00; 
+  }
+
 /* Category Start */
 .category-card{
     border: 1px solid #ddd;
@@ -212,7 +221,7 @@
 /* FLASH SALE */
 
 .flash-sale {
-    background-color: #f8f9fa;
+    /* background-color: #f8f9fa; */
     padding: 20px;
     border-radius: 10px;
 }
