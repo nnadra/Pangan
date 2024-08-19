@@ -345,6 +345,10 @@ a{
     text-overflow: ellipsis;
     overflow: hidden;
 }
+
+.product-name a{
+    color: #FE7E00;
+}
 .product-card .product-card-body .selling-price{
     font-size: 22px;
     color: #000;
