@@ -219,12 +219,9 @@
 
 .flash-sale .card {
     border: none;
-    transition: transform 0.3s ease;
+    margin-left: 30px;
 }
 
-.flash-sale .card:hover {
-    transform: scale(1.05);
-}
 
 .flash-sale .card-title {
     font-size: 1rem;
@@ -255,4 +252,26 @@
     text-decoration: none;
     font-weight: 600;
     color: #FE7E00;
+}
+.cek-promo{
+    background: #9A99FF;
+    padding: 2rem;
+    border-radius: 15px;
+    position: relative;
+}
+
+.card-card{
+    position: absolute;
+    display: flex;
+    gap: 5px;
+}
+.cek-promo button{
+    padding: 5px 10px;
+    background-color: white;
+    font-weight: 400;
+    font-size: 12px;
+    border-radius: 20px;
+}
+.sk{
+    font-size: 10px;
 }
