@@ -258,12 +258,15 @@
     padding: 2rem;
     border-radius: 15px;
     position: relative;
+    width: 289px;
 }
 
 .card-card{
     position: absolute;
     display: flex;
     gap: 5px;
+    margin-left: 150px;
+    margin-top: 20px;
 }
 .cek-promo button{
     padding: 5px 10px;
