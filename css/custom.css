@@ -2,6 +2,9 @@
   font-family: "Roboto", sans-serif;
   text-decoration: none;
 }
+a{
+  text-decoration: none;
+}
 
 /* Navbar */
 .main-navbar {
@@ -217,8 +220,8 @@
 }
 .category-card .category-card-body h5 {
   margin-bottom: 0px;
-  font-size: 18px;
-  font-weight: 600;
+  font-size: 15px;
+  font-weight: 500;
   color: #000;
   text-align: center;
 }
@@ -348,11 +351,11 @@
   text-overflow: ellipsis;
   overflow: hidden;
 }
-.product-card .product-card-body .selling-price{
-    font-size: 22px;
-    color: #000;
-    font-weight: 600;
-    margin-right: 8px;
+.product-card .product-card-body .selling-price {
+  font-size: 22px;
+  color: #000;
+  font-weight: 600;
+  margin-right: 8px;
 }
 .product-card .product-card-body .original-price {
   font-size: 18px;
